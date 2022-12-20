@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./AppHeader.css"
 
 const AppHeader = () => {
+	const [count, setCount] = useState(0);
 	return (
 		<header className="w-[100vw] header">
 			<nav className="container ">
@@ -35,7 +36,7 @@ const AppHeader = () => {
 						</svg>
 					</li>
 					<li className="flex justify-between items-center text-white gap-8 mt-3">
-						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Поддержка сайтов</a>
+						<a href="#" onClick={() => setCount((value) => value + 1)} className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Поддержка сайтов</a>
 						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Тарифы</a>
 						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Наши работы</a>
 						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Отзывы</a>
