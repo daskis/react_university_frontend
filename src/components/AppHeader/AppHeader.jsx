@@ -7,7 +7,7 @@ const AppHeader = () => {
 		<header className="w-[100vw] header">
 			<nav className="container ">
 				<ul className="flex justify-between items-center py-2">
-					<li>
+					<li> ...
 						<svg width="138" height="20" viewBox="0 0 138 20" fill="none"
 						     xmlns="http://www.w3.org/2000/svg">
 							<path
