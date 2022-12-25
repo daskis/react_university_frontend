@@ -1,11 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 html {
     overflow-x: hidden;
 }
 .container {
-    max-width: 1040px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 20px;
     width: 100%;
