@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import "./AppHeader.css"
 
 const AppHeader = () => {
-	const [count, setCount] = useState(0);
 	return (
 		<header className="w-[100vw] header">
 			<nav className="container ">
@@ -35,12 +34,12 @@ const AppHeader = () => {
 							<path d="M7.66431 3.20656H9.918V0.873077H7.66431V3.20656Z" fill="#F9E050"/>
 						</svg>
 					</li>
-					<li className="flex justify-between items-center text-white gap-8 mt-3">
-						<a href="#" onClick={() => setCount((value) => value + 1)} className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Поддержка сайтов</a>
-						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Тарифы</a>
-						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Наши работы</a>
-						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Отзывы</a>
-						<a href="#" className="pb-4 hover:border-b-4 hover:border-primary hover:pb-3">Контакты</a>
+					<li className="flex justify-between items-start text-white gap-8 ">
+						<a href="#" className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">Поддержка сайтов</a>
+						<a href="#" className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">Тарифы</a>
+						<a href="#" className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">Наши работы</a>
+						<a href="#" className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">Отзывы</a>
+						<a href="#" className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">Контакты</a>
 					</li>
 					<li className="flex justify-between items-center gap-5">
 						<a className="text-white" href="tel:88002222673">8 800 222-26-73</a>
@@ -57,7 +56,7 @@ const AppHeader = () => {
 				<div className="flex-col text-white">
 					<h1 className="text-5xl font-bold mt-20 mb-5">Поддержка сайтов на Drupal</h1>
 					<p className="opacity-70 mb-16">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
-					<button className="uppercase py-4 px-20 border-2 border-primary rounded-md">Тарифы</button>
+					<button className="uppercase py-5 px-20 text-sm border-2 border-primary rounded-md">Тарифы</button>
 				</div>
 				<ul className="flex-col flex-wrap text-white">
 					<li className="flex my-20">
