@@ -1,0 +1,7 @@
+.rates {
+    background-image: url("../../assets/ratesBG.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    height: 850px;
+}
