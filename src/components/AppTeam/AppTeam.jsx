@@ -1,6 +1,6 @@
 import React from 'react';
 import "./AppTeam.css"
-import chel1 from "../../assets/chel1.png"
+import imageteam from "../../assets/imageteam.png"
 import chel2 from "../../assets/chel2.png"
 import chel3 from "../../assets/chel3.png"
 
