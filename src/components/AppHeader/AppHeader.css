@@ -4,3 +4,6 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.links {
+    transform: translateY(8px);
+}

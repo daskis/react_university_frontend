@@ -1,21 +1,50 @@
 import React from 'react';
 import "./AppTeam.css"
-import imageteam from "../../assets/imageteam.png"
-import chel2 from "../../assets/chel2.png"
-import chel3 from "../../assets/chel3.png"
-
+import team1 from "../../assets/team1.jpg"
 const AppTeam = () => {
     return (
-        
-        <div class="pt-20 grid grid-flow-row auto-rows-max md:auto-rows-min grid-cols-3 gap-8">
-            <div class="col-span-3 text-center block text-3xl leading-tight font-medium text-black font-extrabold">Команда</div>
-            <div class="transform scale-75"><img src={chel1} alt="chel1"/></div>
-            <div class="transform scale-75"><img src={chel2} alt="chel2"/></div>
-            <div class="transform scale-75"><img src={chel3} alt="chel3"/></div>
-            <div class="transform scale-75"><img src={chel1} alt="chel1"/></div>
-            <div class="transform scale-75"><img src={chel2} alt="chel2"/></div>
-            <div class="transform scale-75"><img src={chel3} alt="chel3"/></div>
-            <div class="col-span-3 text-center block text-3xl leading-tight font-medium text-black font-extrabold">Отзывы</div>
+        <div className="team">
+            <div className="container">
+                <h2 className="text-center text-secondary font-bold text-4xl mt-36 mb-20">Команда</h2>
+                <div className="flex flex-wrap gap-8 justify-between">
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team1} alt=""/>
+                        <h6 className="font-bold">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team1} alt=""/>
+                        <h6 className="font-bold">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team1} alt=""/>
+                        <h6 className="font-bold">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team1} alt=""/>
+                        <h6 className="font-bold">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team1} alt=""/>
+                        <h6 className="font-bold">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team1} alt=""/>
+                        <h6 className="font-bold">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                </div>
+            </div>
         </div>
 )}
 
