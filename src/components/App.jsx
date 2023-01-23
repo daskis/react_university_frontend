@@ -4,6 +4,8 @@ import AppSecondSupport from "./AppSecondSupport/AppSecondSupport";
 import AppExp from "./AppExp/AppExp";
 import AppTeam from "./AppTeam/AppTeam";
 import AppVTB from "./AppVTB/AppVTB";
+import AppCase from "./AppCase/AppCase";
+import AppFooter from "./AppFooter/AppFooter";
 
 
 function App() {
@@ -13,8 +15,10 @@ function App() {
 			<AppSupport/>
 			<AppSecondSupport/>
 			<AppExp/>
+			<AppCase/>
 			<AppTeam/>
 			<AppVTB/>
+			<AppFooter/>
 
 		</>
 	);

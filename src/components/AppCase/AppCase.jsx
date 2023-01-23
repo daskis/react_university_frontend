@@ -1,22 +1,80 @@
 import React from 'react';
-import "./AppCase.css"
+import case1 from "../../assets/case1.jpg"
+import case2 from "../../assets/case2.png"
+import case3 from "../../assets/case3.png"
+import case4 from "../../assets/case4.png"
+import case5 from "../../assets/case5.png"
+import case6 from "../../assets/case6.jpg"
+import case7 from "../../assets/case7.png"
 
-const AppExp = () => {
+const AppCase = () => {
 	return (
-		<div className="w-[100vw] bg-exp h-[840px] relative -z-10 exp">
-			<div className="container flex justify-end items-center">
-				<div className="w-1/2">
-					<h2 className="font-bold text-5xl text-white mb-16 mt-64 leading-[54px]">Экспертиза в Drupal,<br/> опыт 14 лет!</h2>
-					<div className="flex justify-between items-center gap-4">
-						<p className="pl-6 py-4 border-l-4 text-white opacity-70 text-xl border-primary">Только системный подход – контроль версий, резервирование
-							и тестирование!</p>
-						<p className="pl-6 py-4 border-l-4 text-white opacity-70 text-xl border-primary">Только Drupal сайты,
-							не берем на поддержку сайты на других CMS!</p>
+		<div className="Case">
+			<div className="container">
+				<h2 className="text-center text-secondary font-bold text-4xl mt-36 mb-20">Последние кейсы</h2>
+				
+
+				<div class="grid grid-cols-3 gap-4">
+					<div className=""><img src={case1} alt=""/>
+						<p className="pl-6 mt-8 text-xl">Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 text-xs">22.04.2019</p>
+						<p className="mt-4 pl-6 text-xs">Эти слова совершенно справедливы, однако гипнотический рифф продолжает паузный пласт.</p>
 					</div>
+					
+					
+					<div className="flex flex-col items-start justify-end relative h-[474px] col-span-2"><img className="absolute" src={case2} alt=""/>
+						<p className="pl-6 pb-6 font-semibold pl-6 mb-6 text-base text-white relative z-20" >Настройка выгрузки YML для Яндекс.Маркета</p>
+					</div>
+
+					
+					<div className="flex flex-col items-start relative justify-end h-[474px]"><img className="absolute" src={case3} alt=""/>									
+						<p className="pl-6 mt-16 font-semibold text-base text-white relative z-20" >Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-10 text-white text-xs z-20">22.04.2019</p>
+					</div>
+
+					<div className="flex flex-col items-start justify-end relative h-[474px]"><img className="absolute" src={case4} alt=""/>
+						<p className="pl-6 mt-16 font-semibold text-white text-base items-end z-20">Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-10 text-white text-xs z-20">22.04.2019</p>
+					
+					</div>
+					
+					
+					<div className=""><img src={case5} alt=""/>
+						<p className="pl-6 mt-8 text-xl">Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 text-xs">22.04.2019</p>
+						<p className="mt-6 pl-6 text-xs">Эти слова совершенно справедливы, однако гипнотический рифф продолжает паузный пласт</p>
+					</div>
+
+
+					
+					<div className="col-span-2 flex items-end relative h-[474px]"><img className="absolute" src={case6} alt=""/>
+					
+					<p className="pl-6 pb-10 font-semibold text-white text-base items-end z-20">Настройка выгрузки YML для Яндекс.Маркета</p>
+					
+					</div>
+					
+					
+					
+					<div className="flex flex-col items-start justify-end relative h-[474px]"><img className="absolute" src={case7} alt=""/>					
+						<p className="pl-6 mt-16 font-semibold text-white text-base items-end z-20">Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-10 text-white text-xs items-end z-20">22.04.2019</p>
+					</div>
+
+
 				</div>
+				
+
 			</div>
+			<div className="pt-8 text-center border">ПОКАЗАТЬ ЕЩЕ</div>
 		</div>
+		
 	);
 };
 
 export default AppCase;
+
+/*<div className="grid-cols-3 gap-2"></div>
+				<div ><img src={case1} alt=""/></div>
+				<div className="col-span-2"><img src={case2} alt=""/></div>
+				<div><img src={case3} alt=""/></div>
+				<div><img src={case4} alt=""/></div>*/
