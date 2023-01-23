@@ -1,6 +1,9 @@
 import React from 'react';
 import "./AppTeam.css"
 import team1 from "../../assets/team1.jpg"
+import team3 from "../../assets/team3.jpg"
+import team2 from "../../assets/team2.jpg"
+
 const AppTeam = () => {
     return (
         <div className="team">
@@ -9,38 +12,38 @@ const AppTeam = () => {
                 <div className="flex flex-wrap gap-8 justify-between">
                     <div className="flex w-1/4 p-4 flex-col">
                         <img src={team1} alt=""/>
-                        <h6 className="font-bold">Лёша</h6>
+                        <h6 className="font-bold pt-8 ">Лёша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team2} alt=""/>
+                        <h6 className="font-bold pt-8">Роман</h6>
+                        <p>инфраструктура веб-проектов</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team3} alt=""/>
+                        <h6 className="font-bold pt-8">Ирина</h6>
+                        <p>менеджер по работе с клинетами, организация оказания услуг</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team3} alt=""/>
+                        <h6 className="font-bold pt-8">Даша</h6>
+                        <p>руководитель поддержки, планирование задач</p>
+
+                    </div>
+                    <div className="flex w-1/4 p-4 flex-col">
+                        <img src={team2} alt=""/>
+                        <h6 className="font-bold pt-8">Сергей</h6>
                         <p>руководитель поддержки, планирование задач</p>
 
                     </div>
                     <div className="flex w-1/4 p-4 flex-col">
                         <img src={team1} alt=""/>
-                        <h6 className="font-bold">Лёша</h6>
-                        <p>руководитель поддержки, планирование задач</p>
-
-                    </div>
-                    <div className="flex w-1/4 p-4 flex-col">
-                        <img src={team1} alt=""/>
-                        <h6 className="font-bold">Лёша</h6>
-                        <p>руководитель поддержки, планирование задач</p>
-
-                    </div>
-                    <div className="flex w-1/4 p-4 flex-col">
-                        <img src={team1} alt=""/>
-                        <h6 className="font-bold">Лёша</h6>
-                        <p>руководитель поддержки, планирование задач</p>
-
-                    </div>
-                    <div className="flex w-1/4 p-4 flex-col">
-                        <img src={team1} alt=""/>
-                        <h6 className="font-bold">Лёша</h6>
-                        <p>руководитель поддержки, планирование задач</p>
-
-                    </div>
-                    <div className="flex w-1/4 p-4 flex-col">
-                        <img src={team1} alt=""/>
-                        <h6 className="font-bold">Лёша</h6>
-                        <p>руководитель поддержки, планирование задач</p>
+                        <h6 className="font-bold pt-8">Вадим</h6>
+                        <p>UX/UI дизайн</p>
 
                     </div>
                 </div>
