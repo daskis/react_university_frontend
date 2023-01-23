@@ -65,7 +65,9 @@ const AppCase = () => {
 				
 
 			</div>
-			<div className="pt-8 text-center border">ПОКАЗАТЬ ЕЩЕ</div>
+			<div className="pt-4 flex justify-center">
+				<button className="py-4 px-10 border-2 rounded-md">ПОКАЗАТЬ ЕЩЕ</button>
+			</div>
 		</div>
 		
 	);
@@ -73,8 +75,6 @@ const AppCase = () => {
 
 export default AppCase;
 
-/*<div className="grid-cols-3 gap-2"></div>
-				<div ><img src={case1} alt=""/></div>
-				<div className="col-span-2"><img src={case2} alt=""/></div>
-				<div><img src={case3} alt=""/></div>
-				<div><img src={case4} alt=""/></div>*/
+
+
+

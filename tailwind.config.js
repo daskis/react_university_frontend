@@ -10,7 +10,12 @@ module.exports = {
         "secondary": "#050C33",
         "exp": "#040823"
       },
-
+      backgroundImage: {
+        "reviews": "url('assets/reviewsbg.png')",
+        "reviewsbg": "url('assets/reviews/reviewbg.png')",
+        "footerFirst": "url('assets/footer-icon-first.png')",
+        "footerSecond": "url('assets/D.png')"
+      }
     },
   },
   plugins: [],
