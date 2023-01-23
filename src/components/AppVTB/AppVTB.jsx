@@ -15,7 +15,7 @@ const AppVTB = () => {
 			сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
 				
 				<div className="container relative z-20">
-			<ul className="-left-24 top-0 absolute flex justify-between overflow-hidden w-[120%] gap-4">
+			<ul className="-left-36 top-0 absolute flex justify-between overflow-hidden w-[120%] gap-4">
 				<li className="w-[260px] px-6 flex justify-center items-center border flex-col relative">
 				
 					<img src={logo1} alt=""/>
@@ -36,7 +36,7 @@ const AppVTB = () => {
 				<li className="w-[260px] px-6 flex border justify-center items-center flex-col relative">
 
 					<img className="h-[50%]"src={logo2} alt=""/>
-				</li>	
+				</li>
 			</ul>
 
 			<ul className="-right-24 top-44 absolute flex justify-between overflow-hidden w-[120vw] gap-4">

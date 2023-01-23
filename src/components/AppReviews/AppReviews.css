@@ -1,0 +1,30 @@
+
+@keyframes reviewAni {
+    0% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+@keyframes reverseReviewAni {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(1000px);
+    }
+
+}
+
+.review {
+    animation: reviewAni 1s ease;
+}
+.reverseReview {
+    animation: reviewAni 1s ease;
+}
