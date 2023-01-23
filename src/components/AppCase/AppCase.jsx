@@ -19,4 +19,4 @@ const AppExp = () => {
 	);
 };
 
-export default AppCase;
+export default AppExp;

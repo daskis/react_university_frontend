@@ -5,9 +5,9 @@ import AppExp from "./AppExp/AppExp";
 import AppRates from "./AppRates/AppRates";
 import AppTeam from "./AppTeam/AppTeam";
 import AppVTB from "./AppVTB/AppVTB";
-import AppFooter from "./AppFooter/AppFooter";
-
+import AppReviews from "./AppReviews/AppReviews";
 function App() {
+
 	return (
 		<>
 			<AppHeader/>
@@ -15,9 +15,9 @@ function App() {
 			<AppSecondSupport/>
 			<AppExp/>
 			<AppRates/>
+			<AppTeam/>
 			{/*<AppVTB/>*/}
-			{/*<AppTeam/>*/}
-			<AppFooter/>
+			<AppReviews/>
 		</>
 	);
 }
