@@ -15,7 +15,7 @@ const AppRates = () => {
 	}
 
 	return (
-		<div className="relative">
+		<div className="relative" id="rates">
 			<AppModal/>
 			<div className="rates mb-28">
 				<div className="container">
@@ -53,7 +53,7 @@ const AppRates = () => {
 								</li>
 							</ul>
 							<button onClick={changeOpenHandler}
-								className="border-2 border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
+								className="border-2 hover:bg-[#F14D34] transition hover:text-white border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
 								ЗАЯВКУ
 							</button>
 						</div>
@@ -89,7 +89,7 @@ const AppRates = () => {
 								</li>
 							</ul>
 							<button onClick={changeOpenHandler}
-								className="border-2 border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
+								className="border-2 hover:bg-[#F14D34] transition hover:text-white border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
 								ЗАЯВКУ
 							</button>
 
@@ -126,7 +126,7 @@ const AppRates = () => {
 								</li>
 							</ul>
 							<button onClick={changeOpenHandler}
-								className="border-2 border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
+								className="border-2 hover:bg-[#F14D34] transition hover:text-white border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
 								ЗАЯВКУ
 							</button>
 

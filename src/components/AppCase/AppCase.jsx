@@ -23,18 +23,18 @@ const AppCase = () => {
 					
 					
 					<div className="flex flex-col items-start justify-end relative h-[474px] col-span-2"><img className="absolute" src={case2} alt=""/>
-						<p className="pl-6 pb-6 font-semibold pl-6 mb-6 text-base text-white relative z-20" >Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-6 font-semibold pl-6 mb-6 text-base text-white relative z-10" >Настройка выгрузки YML для Яндекс.Маркета</p>
 					</div>
 
 					
 					<div className="flex flex-col items-start relative justify-end h-[474px]"><img className="absolute" src={case3} alt=""/>									
-						<p className="pl-6 mt-16 font-semibold text-base text-white relative z-20" >Настройка выгрузки YML для Яндекс.Маркета</p>
-						<p className="pl-6 pb-10 text-white text-xs z-20">22.04.2019</p>
+						<p className="pl-6 mt-16 font-semibold text-base text-white relative z-10" >Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-10 text-white text-xs z-10">22.04.2019</p>
 					</div>
 
 					<div className="flex flex-col items-start justify-end relative h-[474px]"><img className="absolute" src={case4} alt=""/>
-						<p className="pl-6 mt-16 font-semibold text-white text-base items-end z-20">Настройка выгрузки YML для Яндекс.Маркета</p>
-						<p className="pl-6 pb-10 text-white text-xs z-20">22.04.2019</p>
+						<p className="pl-6 mt-16 font-semibold text-white text-base items-end z-10">Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-10 text-white text-xs z-10">22.04.2019</p>
 					
 					</div>
 					
@@ -49,15 +49,15 @@ const AppCase = () => {
 					
 					<div className="col-span-2 flex items-end relative h-[474px]"><img className="absolute" src={case6} alt=""/>
 					
-					<p className="pl-6 pb-10 font-semibold text-white text-base items-end z-20">Настройка выгрузки YML для Яндекс.Маркета</p>
+					<p className="pl-6 pb-10 font-semibold text-white text-base items-end z-10">Настройка выгрузки YML для Яндекс.Маркета</p>
 					
 					</div>
 					
 					
 					
 					<div className="flex flex-col items-start justify-end relative h-[474px]"><img className="absolute" src={case7} alt=""/>					
-						<p className="pl-6 mt-16 font-semibold text-white text-base items-end z-20">Настройка выгрузки YML для Яндекс.Маркета</p>
-						<p className="pl-6 pb-10 text-white text-xs items-end z-20">22.04.2019</p>
+						<p className="pl-6 mt-16 font-semibold text-white text-base items-end z-10">Настройка выгрузки YML для Яндекс.Маркета</p>
+						<p className="pl-6 pb-10 text-white text-xs items-end z-10">22.04.2019</p>
 					</div>
 
 

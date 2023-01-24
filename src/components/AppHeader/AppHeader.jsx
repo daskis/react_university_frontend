@@ -5,6 +5,12 @@ import {Dropdown} from "flowbite-react";
 const AppHeader = () => {
 	const [firstDrop, setFirstDrop] = useState(false)
 	const [secondDrop, setSecondDrop] = useState(false)
+	const smooth = () => {
+		document.getElementById("rates").scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	}
 	return (
 		<header className="w-[100vw] header">
 			<nav className="container ">
@@ -39,11 +45,11 @@ const AppHeader = () => {
 					</li>
 					<li className="flex links justify-between items-start text-white gap-8 ">
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase hover:border-b-4 hover:border-primary hover:pb-3">
 							Поддержка drupal
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase  hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase  hover:pb-3">
 							<div onMouseEnter={() => setFirstDrop(true)}
 							     onMouseLeave={() => setFirstDrop(false)}
 							     className="flex gap-2 relative">
@@ -53,7 +59,7 @@ const AppHeader = () => {
 								</svg>
 								{firstDrop
 									?
-									<ul className="absolute flex flex-col p-2 top-5  bg-primary w-[300px]">
+									<ul className="absolute flex flex-col p-1 py-2 top-5  bg-primary w-[300px]">
 										<li className="px-4 hover:bg-[#9c2a19] py-1">Миграции</li>
 										<li className="px-4 hover:bg-[#9c2a19] py-1">бэкапы</li>
 										<li className="px-4 hover:bg-[#9c2a19] py-1">аудит безопастности</li>
@@ -67,15 +73,15 @@ const AppHeader = () => {
 
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase hover:border-b-4 hover:border-primary hover:pb-3">
 							Продвижение
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase hover:border-b-4 hover:border-primary hover:pb-3">
 							Реклама
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase hover:pb-3">
 							<div className="flex gap-2 relative"
 							     onMouseEnter={() => setSecondDrop(true)}
 							     onMouseLeave={() => setSecondDrop(false)}
@@ -86,11 +92,13 @@ const AppHeader = () => {
 								</svg>
 								{secondDrop
 									?
-									<div className="absolute flex flex-col p-4 top-5 pt-5  -left-16 bg-primary w-[200px]">
-										<div>123</div>
-										<div>123</div>
-										<div>123</div>
-									</div>
+									<ul className="absolute flex flex-col p-1 py-2 top-5  bg-primary w-[300px]">
+										<li className="px-4 hover:bg-[#9c2a19] py-1">Миграции</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">бэкапы</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">аудит безопастности</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">оптимизация скорости</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">переезд на https</li>
+									</ul>
 								:
 								<></>
 								}
@@ -98,11 +106,11 @@ const AppHeader = () => {
 							</div>
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase hover:border-b-4 hover:border-primary hover:pb-3">
 							Проекты
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 transition-all uppercase hover:border-b-4 hover:border-primary hover:pb-3">
 							Контакты
 						</a>
 					</li>
@@ -114,7 +122,7 @@ const AppHeader = () => {
 					<h1 className="text-5xl font-bold mt-20 mb-5">Поддержка сайтов на Drupal</h1>
 					<p className="opacity-70 mb-16">Сопровождение и поддержка сайтов на CMS Drupal любых версий и
 						запущенности</p>
-					<button className="uppercase py-5 px-20 text-sm border-2 border-primary rounded-md">Тарифы</button>
+					<button onClick={smooth} className="uppercase py-5 px-20 text-sm border-2 border-primary rounded-md">Тарифы</button>
 				</div>
 				<ul className="flex-col flex-wrap text-white">
 					<li className="flex my-20">
