@@ -12,7 +12,9 @@ module.exports = {
       },
       backgroundImage: {
         "reviews": "url('assets/reviewsbg.png')",
-        "reviewsbg": "url('assets/reviews/reviewbg.png')"
+        "reviewsbg": "url('assets/reviews/reviewbg.png')",
+        "footerFirst": "url('assets/footer-icon-first.png')",
+        "footerSecond": "url('assets/D.png')"
       }
     },
   },
