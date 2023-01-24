@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import "./AppHeader.css"
+import {Dropdown} from "flowbite-react";
 
 const AppHeader = () => {
+	const [firstDrop, setFirstDrop] = useState(false)
+	const [secondDrop, setSecondDrop] = useState(false)
 	return (
 		<header className="w-[100vw] header">
 			<nav className="container ">
@@ -40,12 +43,26 @@ const AppHeader = () => {
 							Поддержка drupal
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
-							<div className="flex gap-2">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase  hover:pb-3">
+							<div onMouseEnter={() => setFirstDrop(true)}
+							     onMouseLeave={() => setFirstDrop(false)}
+							     className="flex gap-2 relative">
 								Администрирование
 								<svg className="w-3" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path opacity="1" d="M1 1L4.5 4.5L8 1" stroke="white" strokeWidth="2"/>
 								</svg>
+								{firstDrop
+									?
+									<ul className="absolute flex flex-col p-2 top-5  bg-primary w-[300px]">
+										<li className="px-4 hover:bg-[#9c2a19] py-1">Миграции</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">бэкапы</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">аудит безопастности</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">оптимизация скорости</li>
+										<li className="px-4 hover:bg-[#9c2a19] py-1">переезд на https</li>
+									</ul>
+								:
+								<></>
+								}
 							</div>
 
 						</a>
@@ -58,12 +75,26 @@ const AppHeader = () => {
 							Реклама
 						</a>
 						<a href="#"
-						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:border-b-4 hover:border-primary hover:pb-3">
-							<div className="flex gap-2">
+						   className="pb-4 text-sm text-white opacity-70 hover:opacity-100 uppercase hover:pb-3">
+							<div className="flex gap-2 relative"
+							     onMouseEnter={() => setSecondDrop(true)}
+							     onMouseLeave={() => setSecondDrop(false)}
+							>
 								О нас
 								<svg className="w-3" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path opacity="1" d="M1 1L4.5 4.5L8 1" stroke="white" strokeWidth="2"/>
 								</svg>
+								{secondDrop
+									?
+									<div className="absolute flex flex-col p-4 top-5 pt-5  -left-16 bg-primary w-[200px]">
+										<div>123</div>
+										<div>123</div>
+										<div>123</div>
+									</div>
+								:
+								<></>
+								}
+
 							</div>
 						</a>
 						<a href="#"
