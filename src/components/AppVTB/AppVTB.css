@@ -1,0 +1,8 @@
+.swiper-wrapper {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.swiper-slide {
+    margin-right: 70px !important;
+}
