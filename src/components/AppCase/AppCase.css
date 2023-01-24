@@ -1,0 +1,10 @@
+.product-grid_item:nth-child(n+5)
+{
+    display:none;
+}
+.products-grid_item.is-visible
+{
+    display: block;
+}
+
+

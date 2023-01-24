@@ -7,10 +7,11 @@ import AppTeam from "./AppTeam/AppTeam";
 import AppVTB from "./AppVTB/AppVTB";
 import AppCase from "./AppCase/AppCase";
 import AppFooter from "./AppFooter/AppFooter";
-
+import AppFAQ from "./AppFAQ/AppFAQ";
 import AppReviews from "./AppReviews/AppReviews";
-function App() {
 
+function App() {
+	
 	return (
 		<>
 			<AppHeader/>
@@ -22,8 +23,8 @@ function App() {
 			<AppTeam/>
 			<AppReviews/>
 			<AppVTB/>
+			<AppFAQ/>
 			<AppFooter/>
-
 		</>
 	);
 }
