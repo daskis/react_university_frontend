@@ -14,7 +14,7 @@ const AppCase = () => {
 				<h2 className="text-center text-secondary font-bold text-4xl mt-36 mb-20">Последние кейсы</h2>
 				
 
-				<div class="grid grid-cols-3 gap-4">
+				<div className="grid grid-cols-3 gap-4">
 					<div className=""><img src={case1} alt=""/>
 						<p className="pl-6 mt-8 text-xl">Настройка выгрузки YML для Яндекс.Маркета</p>
 						<p className="pl-6 text-xs">22.04.2019</p>

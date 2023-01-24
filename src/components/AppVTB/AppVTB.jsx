@@ -1,8 +1,10 @@
 import React from 'react';
 import "./AppVTB.css"
-import logo1 from "../../assets/logo1.jpg"
-import logo2 from "../../assets/logo2.jpg"
-import logo3 from "../../assets/logo3.jpg"
+import logo1 from "../../assets/image_1.png"
+import logo2 from "../../assets/image_2.png"
+import logo3 from "../../assets/image_3.png"
+import logo4 from "../../assets/image_4.png"
+
 
 const AppVTB = () => {
 	return (
