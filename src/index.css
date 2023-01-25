@@ -11,9 +11,85 @@ html {
 .container {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
     width: 100%;
 }
 html {
     scroll-behavior: auto; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
+@keyframes fadeOut {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+.loading-spinner-start {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.loading-spinner-done {
+    animation-name: fadeOut;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.success-start {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.success-done {
+    animation-name: fadeOut;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
 }

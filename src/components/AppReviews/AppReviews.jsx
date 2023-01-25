@@ -20,49 +20,49 @@ const AppReviews = () => {
 	const [count, setCount] = useState(0)
 	const [data, setData] = useState([
 		{
-			text: "Команда Drupal Coder вызвала только положительные впечатления!",
-			name: "Нуреев Александр, менеджер проекта Winamp Russian Community",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!1",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community1",
 			img: review_1
 		},
 		{
-			text: "lorem1",
-			name: "loremName1",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!2",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community2",
 			img: review_2
 		},
 		{
-			text: "lorem2",
-			name: "loremName2",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!3",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community3",
 			img: review_3
 		},
 		{
-			text: "lorem3",
-			name: "loremName3",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!4",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community4",
 			img: review_4
 		},
 		{
-			text: "lorem4",
-			name: "loremName4",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!5",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community5",
 			img: review_5
 		},
 		{
-			text: "lorem5",
-			name: "loremName5",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!6",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community6",
 			img: review_6
 		},
 		{
-			text: "lorem6",
-			name: "loremName6",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!7",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community7",
 			img: review_7
 		},
 		{
-			text: "lorem7",
-			name: "loremName7",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!8",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community8",
 			img: review_8
 		},
 
 		{
-			text: "lorem8",
-			name: "loremName8",
+			text: "Команда Drupal Coder вызвала только положительные впечатления!9",
+			name: "Нуреев Александр, менеджер проекта Winamp Russian Community9",
 			img: review_9
 		},
 	])
@@ -79,25 +79,27 @@ const AppReviews = () => {
 	return (
 		<div className="bg-reviewsbg bg-no-repeat bg-left-top mb-40">
 			<div className="container">
-				<div className="h-[50vh] max-w-[80%] bg-no-repeat bg-cover mx-auto bg-reviews ">
+				<div className="max-w-full md:max-w-[80%] bg-no-repeat bg-cover mx-auto bg-reviews ">
 					<h2 className="text-center text-secondary font-bold text-4xl mt-36 mb-20">Отзывы</h2>
-					<div className="flex justify-between w-full px-12">
+					<div className=" justify-between w-full px-0 md:px-12">
 						{data.map((item, i) => (
 							<div
-								key={item.img}
-								className={count === i ? "border-2 review w-[900px] bg-white p-24 px-12 flex" +
+								key={item.text}
+								className={count === i ? "flex flex-col gap-8 md:gap-0 md:flex-row border-2 review" +
+									" max-w-[900px]" +
+									" bg-white p-10 flex" +
 									" justify-between" : "hidden" }>
 								<div
-									className="flex flex-col w-2/3 border-r-2 pr-8 w-2/3 ">
-									<img className="h-[60px] w-fit" src={data[i].img} alt=""/>
-									<p className="font-bold pt-8 pb-4  text-2xl">{data[i].text}</p>
+									className="flex flex-col md:border-r-2 pr0 md:pr-8 w-full md:w-2/3 ">
+									<img className="h-[40px] md:h-[60px] w-fit" src={data[i].img} alt=""/>
+									<p className="font-bold pt-8 pb-4  text-xl lg:text-2xl">{data[i].text}</p>
 									<p>{data[i].name}</p>
 								</div>
 								<div data-aos="fade-right"
-								     className="flex w-1/3 px-6 pl-12 items-center justify-between ">
-									<img onClick={goLeft} className="p-4 cursor-pointer" src={arrow_left} alt=""/>
-									<p className="px-12">{count + 1}/{data.length}</p>
-									<img onClick={goRight} className="p-4 cursor-pointer" src={arrow_right} alt=""/>
+								     className="flex w-full md:w-1/3 px-6 pl-6 lg-:pl-12 items-center justify-between ">
+									<img onClick={goLeft} className=" cursor-pointer" src={arrow_left} alt=""/>
+									<p className="px-6">{count + 1}/{data.length}</p>
+									<img onClick={goRight} className=" cursor-pointer" src={arrow_right} alt=""/>
 								</div>
 							</div>
 						))}

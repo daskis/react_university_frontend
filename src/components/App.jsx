@@ -11,34 +11,26 @@ import AppFooter from "./AppFooter/AppFooter";
 import AppReviews from "./AppReviews/AppReviews";
 import {Alert} from "flowbite-react";
 import {useSelector} from "react-redux";
+import AppFAQ from "./AppFAQ/AppFAQ";
+import {Route, Routes, useLocation} from "react-router-dom";
+import AppContent from "./AppContent/AppContent";
+import AppModal from "./AppModal/AppModal";
 
 function App() {
-	const success = useSelector(state => state.form.success)
+	const location = useLocation();
+	const background = location.state && location.state.background;
 	return (
-		<div className="relative">
-			{success
-				?
-				<div className="fixed left-0 right-0 z-50 max-w-[50%] mx-auto top-56">
-					<Alert color="success">
-						  <span className="text-3xl font-bold p-8 ">
-						    Форма успешно отправлена
-						  </span>
-					</Alert>
-				</div>
-			:
-			<></>
-			}
-			<AppHeader/>
-			<AppSupport/>
-			<AppSecondSupport/>
-			<AppExp/>
-			<AppRates/>
-			<AppCase/>
-			<AppTeam/>
-			<AppReviews/>
-			<AppVTB/>
-			<AppFooter/>
-
+		<div className="App">
+			<Routes location={background || location}>
+				<Route path="/" element={<AppContent />}>
+					<Route path="modal" element={<AppModal />} />
+				</Route>
+			</Routes>
+			{background && (
+				<Routes>
+					<Route path="modal" element={<AppModal />} />
+				</Routes>
+			)}
 		</div>
 	);
 }

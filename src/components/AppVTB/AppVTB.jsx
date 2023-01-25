@@ -68,7 +68,7 @@ const AppVTB = () => {
 					Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои
 					сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
 
-				<div className="relative z-20 mt-6">
+				<div className={"relative z-20 mt-6 hidden lg:block"}>
 					<Swiper
 						spaceBetween={50}
 						loop={true}
@@ -289,6 +289,8 @@ const AppVTB = () => {
 
 					</Swiper>
 				</div>
+
+
 			</div>
 		</div>
 

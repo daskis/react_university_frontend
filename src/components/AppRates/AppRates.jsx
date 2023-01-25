@@ -4,24 +4,20 @@ import vector from "../../assets/vector.svg"
 import {useSelector, useDispatch} from 'react-redux';
 import {changeOpen} from "../../store/slices/modalSlice";
 import AppModal from "../AppModal/AppModal";
+import {Link, useLocation} from "react-router-dom";
 
 // Импортируем нужные действия
 const AppRates = () => {
-	const isOpen = useSelector((state) => state.modal.isOpen);
-	// Возвращает метод store.dispatch() текущего хранилища
-	const dispatch = useDispatch();
-	const changeOpenHandler = () => {
-		dispatch(changeOpen(true))
-	}
+
+	const location = useLocation();
 
 	return (
 		<div className="relative" id="rates">
-			<AppModal/>
 			<div className="rates mb-28">
 				<div className="container">
 					<h2 className="text-center text-secondary font-bold text-4xl mt-36 mb-20">Тарифы</h2>
-					<div className="flex justify-between items-center">
-						<div className="w-1/3 flex-col p-10 border-2 bg-white border-gray-100 rounded-md">
+					<div className="flex flex-col lg-:flex-row flex-wrap lg:justify-between items-center">
+						<div className="w-full lg:w-1/3 mx-auto flex-col p-10 border-2 bg-white border-gray-100 rounded-md">
 							<div className="flex-col pb-6 border-b-2">
 								<span className="text-primary text-xl font-bold">Стартовый</span>
 								<div className="flex items-start">
@@ -52,12 +48,12 @@ const AppRates = () => {
 									<p>Неиспользованные оплаченные часы переносятся на следующий месяц</p>
 								</li>
 							</ul>
-							<button onClick={changeOpenHandler}
-								className="border-2 hover:bg-[#F14D34] transition hover:text-white border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
-								ЗАЯВКУ
-							</button>
+							<Link className="border-2 text-center hover:bg-[#F14D34] transition hover:text-white border-primary
+							 text-primary font-medium rounded-md block w-full py-4 mt-16" to="/modal" state={{background: location}}>
+								Оставить заявку!
+							</Link>
 						</div>
-						<div className="w-1/3 flex-col p-10 border-2 bg-white border-gray-100 rounded-md">
+						<div className="w-full lg:w-1/3 mx-auto flex-col p-10 border-2 bg-white border-gray-100 rounded-md">
 							<div className="flex-col pb-6 border-b-2">
 								<span className="text-primary text-xl font-bold">Бизнес</span>
 								<div className="flex items-start">
@@ -88,13 +84,12 @@ const AppRates = () => {
 									<p>Неиспользованные часы не переносятся</p>
 								</li>
 							</ul>
-							<button onClick={changeOpenHandler}
-								className="border-2 hover:bg-[#F14D34] transition hover:text-white border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
-								ЗАЯВКУ
-							</button>
-
+							<Link className="border-2 text-center hover:bg-[#F14D34] transition hover:text-white border-primary
+							 text-primary font-medium rounded-md block w-full py-4 mt-16" to="/modal" state={{background: location}}>
+								Оставить заявку!
+							</Link>
 						</div>
-						<div className="w-1/3 flex-col p-10 border-2 bg-white border-gray-100 rounded-md">
+						<div className="w-full lg:w-1/3 mx-auto flex-col p-10 border-2 bg-white border-gray-100 rounded-md">
 							<div className="flex-col pb-6 border-b-2">
 								<span className="text-primary text-xl font-bold">VIP</span>
 								<div className="flex items-start">
@@ -125,11 +120,10 @@ const AppRates = () => {
 									<p>Неиспользованные часы не переносятся</p>
 								</li>
 							</ul>
-							<button onClick={changeOpenHandler}
-								className="border-2 hover:bg-[#F14D34] transition hover:text-white border-primary text-primary font-medium rounded-md block w-full py-4 mt-16">ОСТАВИТЬ
-								ЗАЯВКУ
-							</button>
-
+							<Link className="border-2 text-center hover:bg-[#F14D34] transition hover:text-white border-primary
+							 text-primary font-medium rounded-md block w-full py-4 mt-16" to="/modal" state={{background: location}}>
+								Оставить заявку!
+							</Link>
 						</div>
 					</div>
 				</div>
